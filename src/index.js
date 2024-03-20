@@ -5,13 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
+import Exchanges from './exchange';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     //store-мы делимся сразу всем хранилищем со всем приложением. 
     <Provider store={store}>
-        <App />
+        <Exchanges />
     </Provider>
+
 
 );
 

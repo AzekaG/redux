@@ -21,16 +21,12 @@ function App() {
     return 'Loading...';
   if (loading === 'rejected')
     return error;
-
+ 
   return (
     <div className="App">
       <button onClick={() => dispatch(toggleTheme())}>Click</button>
-
       <button onClick={() => dispatch(setTheme('dark'))}>SetTheme</button>
-
       {theme.value}
-
-
       {products.map(product => <div key={product.id}>{product.title}</div>)}
     </div>
   );
